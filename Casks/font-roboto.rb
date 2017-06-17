@@ -1,24 +1,24 @@
-class FontRoboto < Cask
-  url 'http://developer.android.com/downloads/design/roboto-1.2.zip'
-  homepage 'http://developer.android.com/design/style/typography.html'
-  version '1.200311'
-  sha1 '87ac584379974261d2483f459a388790d9d817ed'
-  font 'Roboto_v1.2/Roboto/Roboto-Black.ttf',
-       'Roboto_v1.2/Roboto/Roboto-BlackItalic.ttf',
-       'Roboto_v1.2/Roboto/Roboto-Bold.ttf',
-       'Roboto_v1.2/Roboto/Roboto-BoldItalic.ttf',
-       'Roboto_v1.2/Roboto/Roboto-Italic.ttf',
-       'Roboto_v1.2/Roboto/Roboto-Light.ttf',
-       'Roboto_v1.2/Roboto/Roboto-LightItalic.ttf',
-       'Roboto_v1.2/Roboto/Roboto-Medium.ttf',
-       'Roboto_v1.2/Roboto/Roboto-MediumItalic.ttf',
-       'Roboto_v1.2/Roboto/Roboto-Regular.ttf',
-       'Roboto_v1.2/Roboto/Roboto-Thin.ttf',
-       'Roboto_v1.2/Roboto/Roboto-ThinItalic.ttf',
-       'Roboto_v1.2/RobotoCondensed/RobotoCondensed-Bold.ttf',
-       'Roboto_v1.2/RobotoCondensed/RobotoCondensed-BoldItalic.ttf',
-       'Roboto_v1.2/RobotoCondensed/RobotoCondensed-Italic.ttf',
-       'Roboto_v1.2/RobotoCondensed/RobotoCondensed-Light.ttf',
-       'Roboto_v1.2/RobotoCondensed/RobotoCondensed-LightItalic.ttf',
-       'Roboto_v1.2/RobotoCondensed/RobotoCondensed-Regular.ttf'
+cask 'font-roboto' do
+  version :latest
+  sha256 :no_check
+
+  # github.com/google/fonts was verified as official when first introduced to the cask
+  url 'https://github.com/google/fonts/trunk/apache/roboto',
+      using:      :svn,
+      trust_cert: true
+  name 'Roboto'
+  homepage 'http://www.google.com/fonts/specimen/Roboto'
+
+  font 'Roboto-Black.ttf'
+  font 'Roboto-BlackItalic.ttf'
+  font 'Roboto-Bold.ttf'
+  font 'Roboto-BoldItalic.ttf'
+  font 'Roboto-Italic.ttf'
+  font 'Roboto-Light.ttf'
+  font 'Roboto-LightItalic.ttf'
+  font 'Roboto-Medium.ttf'
+  font 'Roboto-MediumItalic.ttf'
+  font 'Roboto-Regular.ttf'
+  font 'Roboto-Thin.ttf'
+  font 'Roboto-ThinItalic.ttf'
 end

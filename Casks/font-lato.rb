@@ -1,16 +1,27 @@
-class FontLato < Cask
-  url 'http://www.latofonts.com/download/LatoOFL.zip'
+cask 'font-lato' do
+  version :latest
+  sha256 :no_check
+
+  url 'http://www.latofonts.com/download/Lato2OFL.zip'
+  name 'Lato'
   homepage 'http://www.latofonts.com/'
-  version 'latest'
-  no_checksum
-  font 'OTF/Lato-Bla.otf',
-       'OTF/Lato-BlaIta.otf',
-       'OTF/Lato-Bol.otf',
-       'OTF/Lato-BolIta.otf',
-       'OTF/Lato-Hai.otf',
-       'OTF/Lato-HaiIta.otf',
-       'OTF/Lato-Lig.otf',
-       'OTF/Lato-LigIta.otf',
-       'OTF/Lato-Reg.otf',
-       'OTF/Lato-RegIta.otf'
+
+  font 'Lato2OFL/Lato-Black.ttf'
+  font 'Lato2OFL/Lato-BlackItalic.ttf'
+  font 'Lato2OFL/Lato-Bold.ttf'
+  font 'Lato2OFL/Lato-BoldItalic.ttf'
+  font 'Lato2OFL/Lato-Hairline.ttf'
+  font 'Lato2OFL/Lato-HairlineItalic.ttf'
+  font 'Lato2OFL/Lato-Heavy.ttf'
+  font 'Lato2OFL/Lato-HeavyItalic.ttf'
+  font 'Lato2OFL/Lato-Italic.ttf'
+  font 'Lato2OFL/Lato-Light.ttf'
+  font 'Lato2OFL/Lato-LightItalic.ttf'
+  font 'Lato2OFL/Lato-Medium.ttf'
+  font 'Lato2OFL/Lato-MediumItalic.ttf'
+  font 'Lato2OFL/Lato-Regular.ttf'
+  font 'Lato2OFL/Lato-Semibold.ttf'
+  font 'Lato2OFL/Lato-SemiboldItalic.ttf'
+  font 'Lato2OFL/Lato-Thin.ttf'
+  font 'Lato2OFL/Lato-ThinItalic.ttf'
 end

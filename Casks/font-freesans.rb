@@ -1,18 +1,21 @@
-class FontFreesans < Cask
-  url 'http://ftp.gnu.org/gnu/freefont/freefont-otf-20120503.tar.gz'
+cask 'font-freesans' do
+  version '20120503'
+  sha256 '3a6c51868c71b006c33c4bcde63d90927e6fcca8f51c965b8ad62d021614a860'
+
+  url "http://ftp.gnu.org/gnu/freefont/freefont-otf-#{version}.tar.gz"
+  name 'FreeSans'
   homepage 'http://ftp.gnu.org/gnu/freefont/'
-  version '0412.2268'
-  sha1 'dad7600fa9eed4116c2aaa561228e3879565f7aa'
-  font 'freefont-20120503/FreeMono.otf',
-       'freefont-20120503/FreeMonoBold.otf',
-       'freefont-20120503/FreeMonoBoldOblique.otf',
-       'freefont-20120503/FreeMonoOblique.otf',
-       'freefont-20120503/FreeSans.otf',
-       'freefont-20120503/FreeSansBold.otf',
-       'freefont-20120503/FreeSansBoldOblique.otf',
-       'freefont-20120503/FreeSansOblique.otf',
-       'freefont-20120503/FreeSerif.otf',
-       'freefont-20120503/FreeSerifBold.otf',
-       'freefont-20120503/FreeSerifBoldItalic.otf',
-       'freefont-20120503/FreeSerifItalic.otf'
+
+  font "freefont-#{version}/FreeMono.otf"
+  font "freefont-#{version}/FreeMonoBold.otf"
+  font "freefont-#{version}/FreeMonoBoldOblique.otf"
+  font "freefont-#{version}/FreeMonoOblique.otf"
+  font "freefont-#{version}/FreeSans.otf"
+  font "freefont-#{version}/FreeSansBold.otf"
+  font "freefont-#{version}/FreeSansBoldOblique.otf"
+  font "freefont-#{version}/FreeSansOblique.otf"
+  font "freefont-#{version}/FreeSerif.otf"
+  font "freefont-#{version}/FreeSerifBold.otf"
+  font "freefont-#{version}/FreeSerifBoldItalic.otf"
+  font "freefont-#{version}/FreeSerifItalic.otf"
 end

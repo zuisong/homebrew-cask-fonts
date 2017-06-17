@@ -1,7 +1,10 @@
-class FontCode2002 < Cask
+cask 'font-code2002' do
+  version :latest
+  sha256 :no_check
+
   url 'http://www.ffonts.net/Code2002.font.zip'
+  name 'Code2002'
   homepage 'http://www.ffonts.net/Code2002.font.download'
-  version '0.917'
-  sha1 'ff45f7d5244018ce1a8b9afd45228d99900a6024'
+
   font 'CODE2002.TTF'
 end
